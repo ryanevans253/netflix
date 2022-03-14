@@ -20,6 +20,13 @@ export default function Navbar() {
   return (
     <div className={`navbar ${show && "nav_black"}`}>
       <img className="nav_logo" src={logo} alt="Netflix Logo" />
+      <div className="nav_list">
+        <li style={{ fontWeight: 800 }}>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>New and Popular</li>
+        <li>My List</li>
+      </div>
       <img className="nav_icon" src={icon} alt="User Icon" />
     </div>
   );

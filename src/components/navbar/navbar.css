@@ -3,13 +3,14 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  /* background-color: #000; */
+  /* add linear gradient */
   width: 100%;
   padding: 20px;
   z-index: 1;
 
   transition-timing-function: ease-in;
   transition: all 0.5s;
+  align-items: center;
 }
 
 .nav_black {
@@ -26,4 +27,25 @@
   width: 30px;
   object-fit: contain;
   right: 20px;
+}
+
+.nav_list {
+  display: flex;
+  margin-right: auto;
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+li:hover {
+  transition: all 0.4s;
+  color: rgba(229, 229, 229, 0.7);
+}
+
+li {
+  list-style-type: none;
+  margin: 0 0.7rem;
+  padding: 0;
 }
