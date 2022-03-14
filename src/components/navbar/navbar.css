@@ -19,14 +19,14 @@
 
 .nav_logo {
   object-fit: contain;
-  width: 80px;
+  width: 100px;
 }
 
 .nav_icon {
-  position: fixed;
+  /* position: fixed; */
   width: 30px;
   object-fit: contain;
-  right: 20px;
+  /* right: 20px; */
 }
 
 .nav_list {
@@ -48,4 +48,12 @@ li {
   list-style-type: none;
   margin: 0 0.7rem;
   padding: 0;
+}
+
+.nav_icons {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  gap: 10px;
+  color: white;
 }

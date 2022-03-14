@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import icon from "./icon.png";
 import logo from "./logo.png";
 import "./navbar.css";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function Navbar() {
   const [show, handleShow] = useState(false);
@@ -27,7 +30,14 @@ export default function Navbar() {
         <li>New and Popular</li>
         <li>My List</li>
       </div>
-      <img className="nav_icon" src={icon} alt="User Icon" />
+
+      <div class="nav_icons">
+        <SearchIcon />
+        <li>DVD</li>
+        <NotificationsIcon />
+        <img className="nav_icon" src={icon} alt="User Icon" />
+        <ArrowDropDownIcon />
+      </div>
     </div>
   );
 }
